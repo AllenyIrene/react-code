@@ -1,13 +1,315 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.App
+{
+  min-height: 100vh;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header
+{
+  display: flex;
+  align-items: center;
+  background: cyan;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+
+ 
+}
+.nav
+{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.header-details
+{
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+.header-details h5
+{
+  font-size: 2rem;
+  color: black;
+}
+
+.form input
+{
+  width: 25em;
+  height: 3em;
+  border: 2px solid palevioletred;
+  border-radius: 20px;
+  padding: 20px;
+}
+.form
+{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.form button
+{
+  width: 5em;
+  height: 2em;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  background: palevioletred;
+}
+
+.nav
+{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav a 
+{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: palevioletred;
+}
+
+.home
+{
+  
+  display: flex;
+  gap: 5%;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.home-list
+{
+  width: 35% ;
+
+}
+.home-Map
+{
+  width: 60%;
+
+}
+.map-container 
+{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 20px;
+
+}
+.map-container img
+{
+  width: 25rem;
+  height: 20rem;
+  border-radius: 50px;
+}
+.list
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.list-form
+{
+  display: flex;
+  gap: 20px;
+}
+.list-form input
+{
+  width: 250px;
+  height: 50px;
+  border: 2px solid palevioletred;
+  border-radius: 20px;
+  padding: 10px;
+ 
+}
+.list-form select
+{
+  width: 200px;
+  height: 50px;
+  border: 2px solid palevioletred;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.list-form button
+{
+  width: 160px;
+  height: 50px;
+  border: 2px solid palevioletred;
+  border-radius: 20px;
+  padding: 10px ;
+  background: lightseagreen;
+}
+.places img
+{
+   width: 250px;
+   height: 300px;
+   border-radius: 20px;
+}
+.places
+{
+  border: 2px solid lightseagreen;
+  border-radius: 20px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.places h1 
+{
+  color: rgb(111, 27, 55);
+  font-size: 1.5rem;
+}
+.places a
+{
+  
+}
+
+.list-places
+{
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  gap: 20px;
+  align-items: center;
+  column-gap: 40px;
+
+}
+.main-list
+{
+  display: flex;
+  gap: 3rem;
+  margin-top: 20px;
+}
+.pagination
+{
+  display: flex;
+  gap: 20px;
+}
+.page-link button
+{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid lightseagreen;
+}
+.center-pagination
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.details-details
+{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 50px;
+}
+
+.details-details img 
+{
+  width: auto;
+  height: 500px;
+  border-radius: 30px;
+}
+.details-2
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 20px;
+  padding-left: 50px;
+}
+.details-2 ul li
+{
+  list-style: square;
+
+}
+.details-2 p 
+{
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+}
+.list-details h5
+{
+ font-weight: bolder;
+ font-size: 30px;
+ padding-bottom: 20px;
+ color: palevioletred;
+ font-family: cursive;
+ text-transform: uppercase;
+}
+.details-btn button
+{
+  width: 100px;
+  height: 100px;
+  border: 2px solid palevioletred;
+  border-radius: 20px;
+}
+.details-btn
+{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.footer
+{
+  margin-top: 20px;
+  background: palegoldenrod;
+  padding-top: 20px;
+}
+.footer-socila
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.social 
+{
+  display: flex;
+  gap: 20px;
+}
+.social button
+{
+  width: 100px;
+  height: 80px;
+  border: 2px solid palevioletred;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding: 10px;
+
+}
+.footer-socila h4
+{
+  border-bottom: 2px solid palevioletred;
+}
+.footer-dt
+{
+  background: rgb(29, 28, 28);
+  color: white;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  bottom: 0px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
 }
